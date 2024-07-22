@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-left, .header-right {
+  padding: 150px;
+}
+
+.header-left {
+  flex: 1;
+  max-width: 30%;
+}
+
+.header-right {
+  flex: 2;
+  max-width: 70%;
+  padding-left: 20px;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #333333;
+}
+
+.header-left h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.2em;
+  color: #00a99d;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  background-image: url('path/to/profile-image.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 120px auto;
+}
+header h3 {
+  background-color: #00a99d;
+  color: #ffffff;
+  padding: 10px;
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.informatica {
+  margin-top: 230px; 
+}
+
+.idiomas {
+  margin-top: 120px; 
+}
+
+.contacto {
+  margin-top: 150px; 
+}
+
+section h3 {
+  background-color: #00a99d;
+  color: #ffffff;
+  padding: 10px;
+  margin: 120;
+}
+
+.empresa p span {
+  color: #00a99d; 
+}
+.empresa, .formacion-item {
+  margin-bottom: 20px;
+}
+
+.empresa h4, .formacion-item h4 {
+  color: black;
+  margin: 10px 0 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 100px;
+  padding: 15px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  color: #666666;
+}
+ul li::before {
+  content: '•'; 
+  color: #00a99d; 
+  font-size: 1.2em;
+  margin-right: 10px; 
+}
+.contacto p, .formacion-item p {
+  margin: 5px 10 0;
+  color: #666666;
+}
+
+
+.informatica ul, .idiomas ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.informatica ul li, .idiomas ul li {
+  width: auto;
+  margin-bottom: 10px auto;
+}
+
+.informatica ul li {
+  color: #00a99d;
+}
+
+.idiomas ul li {
+  color: #00a99d;
+}
+
+.contacto p {
+  display: flex;
+  align-items: center;
+}
+
+.contacto p i {
+  margin-right: 10px;
+  color: #00a99d;
+}
+
+.h5 {
+  background-color: #00a99d; 
+  color: #ffffff; 
+  padding: 10px; 
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.formacion-item p span {
+  color: #00a99d; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header-left, .header-right {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
